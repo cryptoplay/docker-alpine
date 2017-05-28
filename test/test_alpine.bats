@@ -3,7 +3,7 @@
 load options
 
 @test "awscli shows help with no options" {
-  run docker run --rm --read-only ${CAPS} cryptoplay/alpine
+  run docker run --rm --read-only ${CAPS} cryptoplay/alpine apk help
   [[ ${output} =~ SYNOPSIS ]]
 }
 
