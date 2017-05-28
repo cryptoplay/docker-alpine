@@ -8,4 +8,4 @@ docker push cryptoplay/alpine:${TAG}
 docker push cryptoplay/alpine:latest
 docker logout
 
-# curl -X POST 'https://hooks.microbadger.com/images/cryptoplay/alpine/Lan3ZPTzecbxGrzvkdxR-dTxIB8='
+curl -X POST 'https://hooks.microbadger.com/images/cryptoplay/alpine/HTlsERf3kLY4CZ-tMPP1Hywe2Ns='
