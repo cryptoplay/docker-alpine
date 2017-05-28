@@ -2,6 +2,7 @@
 
 . ci/vars
 docker login -u ${user} -p ${pass}
+#docker login -u $DOCKER_USER -p $DOCKER_PASS
 docker tag cryptoplay/alpine cryptoplay/alpine:${TAG}
 docker push cryptoplay/alpine:${TAG}
 docker push cryptoplay/alpine:latest
