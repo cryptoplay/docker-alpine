@@ -8,7 +8,7 @@ FROM alpine:3.5
 
 # linuxserver.io's images default to having abc user with gid/uid 911
 RUN addgroup -g 911 app \
- && adduser -G abc -D -u 911 app
+ && adduser -G app -D -u 911 app
 
 # helper to install things and cleanup to keep image sizes down
 ADD docker-apk-install.sh /usr/local/sbin/docker-apk-install
