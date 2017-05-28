@@ -11,7 +11,7 @@ RUN addgroup -g 911 app \
  && adduser -G app -D -u 911 app
 
 # helper to install things and cleanup to keep image sizes down
-ADD docker-apk-install.sh /usr/local/sbin/docker-apk-install
+ADD src/docker-apk-install.sh /usr/local/sbin/docker-apk-install
 
 RUN docker-apk-install su-exec
 
