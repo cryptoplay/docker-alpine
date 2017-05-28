@@ -1,0 +1,10 @@
+#!/bin/bash
+
+. ci/vars
+docker login -u ${user} -p ${pass}
+docker tag cryptoplay/alpine cryptoplay/alpine:${TAG}
+docker push cryptoplay/alpine:${TAG}
+docker push cryptoplay/alpine:latest
+docker logout
+
+# curl -X POST 'https://hooks.microbadger.com/images/cryptoplay/alpine/Lan3ZPTzecbxGrzvkdxR-dTxIB8='
