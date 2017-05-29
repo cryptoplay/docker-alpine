@@ -4,7 +4,7 @@
 #
 # An Alpine Linux container with helper scripts for installing packages
 #
-FROM alpine:3.5
+FROM alpine:3.6
 
 # linuxserver.io's images default to having abc user with gid/uid 911
 RUN addgroup -g 911 app \

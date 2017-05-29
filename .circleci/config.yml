@@ -4,7 +4,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: cryptoplay/cci:20170528T1611-git-4c553f2
+      - image: cryptoplay/cci-alpine:3.6
 
     working_directory: ~/wtf/
 
